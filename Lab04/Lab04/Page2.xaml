@@ -4,9 +4,11 @@
              x:Class="Lab04.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Pagina 2!!!!!"
+            <Label Text="Page 2"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Previous Page" Clicked="OnPreviousPageButtonClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

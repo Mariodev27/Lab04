@@ -10,17 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Lab04
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page2 : ContentPage
+    public partial class CarouselPage1 : CarouselPage
     {
-        public Page2()
+        public CarouselPage1()
         {
             InitializeComponent();
+            btnClose.Clicked += async (sender, e) =>
+            {
+                await Navigation.PopAsync();
+            };
         }
-
-        async void OnPreviousPageButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
-
     }
 }

@@ -10,17 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Lab04
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page2 : ContentPage
+    public partial class ModalPage1 : ContentPage
     {
-        public Page2()
+        public ModalPage1()
         {
             InitializeComponent();
+            btnClosePopup.Clicked += async (sender, e) =>
+            {
+                await Navigation.PopModalAsync();
+            };
         }
-
-        async void OnPreviousPageButtonClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
-
     }
 }
