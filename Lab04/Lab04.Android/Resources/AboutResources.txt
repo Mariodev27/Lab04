@@ -7,6 +7,7 @@ For example, a sample Android app that contains a user interface layout (main.xm
 an internationalization string table (strings.xml) and some icons (drawable-XXX/icon.png) 
 would keep its resources in the "Resources" directory of the application:
 
+
 Resources/
     drawable-hdpi/
         icon.png
